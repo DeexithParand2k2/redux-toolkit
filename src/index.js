@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 //reducer
 import userReducer from './Features/user'
 import modeReducer from './Features/mode'
+import fetchReducer from './Features/fetchit';
 
 //store => container storing all the state globally
 //1)also contains all the reducers used in the program
@@ -19,6 +20,7 @@ const store = configureStore({
   reducer:{
     user:userReducer,
     mode:modeReducer,
+    fetchit:fetchReducer,
   }
 })
 
